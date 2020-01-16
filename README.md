@@ -22,6 +22,13 @@ After some time, the following error appears.
 * I made a conda environment named **drlnd**, and the following is the result of `pip freeze > Requirements.txt`.
 * I know there are some differences between the recommended requirements, but I am unsure if this is the problem.
 
+
+The difference is summarized as...
+1) grpcio==1.20.0  instead of grpcio==1.11.0
+2) tensorflow==1.13.1 instead of tensorflow==1.7.1
+3) torch==1.2.0 instead of torch==0.4.0
+
+
 ```
 absl-py==0.7.1
 alabaster==0.7.12
@@ -78,7 +85,7 @@ gast==0.2.2
 gevent==1.3.7
 glob2==0.6
 greenlet==0.4.15
-grpcio==1.20.0    ###### grpcio==1.11.0  would this be a problem? I coudn't install 1.20.0 woudn't get installed. ######
+grpcio==1.20.0    ###### grpcio==1.11.0  would this be a problem? I coudn't install 1.11.0 
 h5py==2.9.0
 heapdict==1.0.0
 html5lib==1.0.1
@@ -213,7 +220,7 @@ sympy==1.3
 tables==3.4.4
 tblib==1.3.2
 tensorboard==1.13.1
-tensorflow==1.13.1   ############## tensorflow==1.7.1 recommended by udacity
+tensorflow==1.13.1   ############## tensorflow==1.7.1 recommended by udacity <-- a possible reason for failure?
 tensorflow-estimator==1.13.0
 tensorflow-gpu==1.13.1
 termcolor==1.1.0
