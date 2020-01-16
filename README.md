@@ -1,20 +1,24 @@
-# drlnd_unity_setup
-To ask questions of how to setup drlnd unity setup
+* I am trying to use the Udacity's Unity environment locally in my **offline notebook** (windows 10, 64bit).
+* However, I am having some difficulties in doing so :(
 
 
-The **Tennis.exe** gets executed, and the tennis ball keeps falling down. The corresponding screenshot is as below.
+
+
+
+The **Tennis.exe** gets executed as shown below. However, the tennis ball just keeps falling down without the paddles moving (since no action is given). 
 
 ![Alt text](wontwork.png?raw=true "Optional Title")
 
 
 
-After some time, the following error appears.
+After some time, the following error appears. 
 
 
 ![Alt text](wontwork2.png?raw=true "Optional Title")
 
 
-I made a conda environment named **drlnd**, and the following is the result of `pip freeze > Requirements.txt`
+* I made a conda environment named **drlnd**, and the following is the result of `pip freeze > Requirements.txt`.
+* I know there are some differences between the recommended requirements, but I am unsure if this is the problem.
 
 ```
 absl-py==0.7.1
@@ -59,7 +63,7 @@ datashape==0.5.4
 decorator==4.3.0
 defusedxml==0.5.0
 distributed==1.25.1
-docopt==0.6.2
+docopt==0.6.2  ############# installed 
 docutils==0.14
 entrypoints==0.2.3
 et-xmlfile==1.0.1
@@ -72,7 +76,7 @@ gast==0.2.2
 gevent==1.3.7
 glob2==0.6
 greenlet==0.4.15
-grpcio==1.20.0
+grpcio==1.20.0    ###### grpcio==1.11.0  would this be a problem? I coudn't install 1.20.0 woudn't get installed. ######
 h5py==2.9.0
 heapdict==1.0.0
 html5lib==1.0.1
@@ -80,7 +84,7 @@ idna==2.8
 imageio==2.4.1
 imagesize==1.1.0
 importlib-metadata==0.6
-ipykernel==5.1.0
+ipykernel==5.1.0    ###### installed as recommended
 ipython==7.2.0
 ipython-genutils==0.2.0
 ipywidgets==7.4.2
@@ -90,7 +94,7 @@ jdcal==1.4
 jedi==0.13.2
 Jinja2==2.10
 jsonschema==2.6.0
-jupyter==1.0.0
+jupyter==1.0.0     ########## installed as recommended
 jupyter-client==5.2.4
 jupyter-console==6.0.0
 jupyter-core==4.4.0
@@ -108,7 +112,7 @@ locket==0.2.0
 lxml==4.2.5
 Markdown==3.1
 MarkupSafe==1.1.0
-matplotlib==3.0.2
+matplotlib==3.0.2  ############  installed as recommended
 mccabe==0.6.1
 menuinst==1.4.14
 midi==0.2.3
@@ -129,14 +133,14 @@ nose==1.3.7
 notebook==5.7.4
 numba==0.41.0
 numexpr==2.6.8
-numpy==1.16.2
+numpy==1.16.2    ###### numpy>=1.11.0  no problem here
 numpydoc==0.8.0
 odo==0.5.1
 olefile==0.46
 opencv-contrib-python==4.1.0.25
 openpyxl==2.5.12
 packaging==18.0
-pandas==0.23.4
+pandas==0.23.4  ###### installed as recommended
 pandocfilters==1.4.2
 parso==0.3.1
 partd==0.3.9
@@ -146,13 +150,13 @@ patsy==0.5.1
 pbr==5.1.3
 pep8==1.7.1
 pickleshare==0.7.5
-Pillow==6.0.0
+Pillow==6.0.0    ##########  Pillow>=4.2.1 no problem here
 pkginfo==1.4.2
 pluggy==0.8.0
 ply==3.11
 prometheus-client==0.5.0
 prompt-toolkit==2.0.7
-protobuf==3.5.2
+protobuf==3.5.2    ########### no problem here  protobuf==3.5.2
 psutil==5.4.8
 py==1.7.0
 pycodestyle==2.4.0
@@ -167,7 +171,7 @@ pyodbc==4.0.25
 pyOpenSSL==18.0.0
 pyparsing==2.3.0
 PySocks==1.6.8
-pytest==4.0.2
+pytest==4.0.2    ########## pytest>=3.2.2 no problem here
 pytest-arraydiff==0.3
 pytest-astropy==0.5.0
 pytest-doctestplus==0.2.0
@@ -178,7 +182,7 @@ pytz==2018.7
 PyWavelets==1.0.1
 pywin32==223
 pywinpty==0.5.5
-PyYAML==3.13
+PyYAML==3.13   ########## installed pyyaml
 pyzmq==17.1.2
 QtAwesome==0.5.3
 qtconsole==4.4.3
@@ -188,7 +192,7 @@ rope==0.11.0
 ruamel-yaml==0.15.46
 scikit-image==0.14.1
 scikit-learn==0.20.1
-scipy==1.2.1
+scipy==1.2.1  ###### installed as recommended
 seaborn==0.9.0
 Send2Trash==1.5.0
 simplegeneric==0.8.1
@@ -207,14 +211,14 @@ sympy==1.3
 tables==3.4.4
 tblib==1.3.2
 tensorboard==1.13.1
-tensorflow==1.13.1
+tensorflow==1.13.1   ############## tensorflow==1.7.1 recommended by udacity
 tensorflow-estimator==1.13.0
 tensorflow-gpu==1.13.1
 termcolor==1.1.0
 terminado==0.8.1
 testpath==0.4.2
 toolz==0.9.0
-torch==1.2.0
+torch==1.2.0    ########### torch==0.4.0   <-- would this be a problem?
 torchvision==0.4.0
 tornado==5.1.1
 tqdm==4.28.1
